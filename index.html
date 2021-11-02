@@ -17,36 +17,63 @@ h1, h2, h3, h4, h5, h6 {
 </style>
 <body>
 
-<!-- Navbar (sit on top) -->
-<div class="w3-top">
-  <div class="w3-bar w3-white w3-padding w3-card " style="letter-spacing:4px;">
-    <img class="w3-bar-item " href="index.html" src="ITARTI.jpg"  width="100" height="100">
-    <!-- Right-sided navbar links. Hide them on small screens -->
-    <div class="w3-right w3-hide-small ">
-      <a href="#home" class="w3-bar-item w3-button ">ITARTI Artesanía Contemporánea</a>
-      <a href="#about" class="w3-bar-item w3-button">Inicio</a>
-      <a href="#menu" class="w3-bar-item w3-button">Tienda</a>
-      <a href="#contact" class="w3-bar-item w3-button">Contacto</a>
-      <a href="#contact" class="w3-bar-item w3-button">Mas sobre ITARTI</a>
+<!-- Navbar -->
+  <div class="w3-top">
+    <div class="w3-bar w3-white w3-padding w3-card" style="letter-spacing:4px;">
+      <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+      <img href="index.html" src="ITARTI.jpg" class=" w3-left" width="100" height="100">
+      <a href="index.html" class="w3-bar-item w3-button w3-padding-large w3-right w3-hide-small">Inicio</a>
+      <a href="#footer" class="w3-bar-item w3-button w3-padding-large w3-right w3-hide-small">Contacto</a>
+      <a href="#tour  " class="w3-bar-item w3-button w3-padding-large w3-right w3-hide-small">Tienda</a>
+      <a href="#contac" class="w3-bar-item w3-button w3-padding-large w3-right w3-hide-small">Acerca de mi</a>
+      <div class="w3-dropdown-hover w3-right w3-hide-small">
+        <button class="w3-padding-large w3-button" title="More">Más sobre ITARTI <i class="fa fa-caret-down"></i></button>     
+        <div class="w3-dropdown-content w3-bar-block w3-card-4">
+          <a href="index.html" class="w3-bar-item w3-button">Inicio</a>
+          <a href="#" class="w3-bar-item w3-button">Tienda</a>
+          <a href="#" class="w3-bar-item w3-button">Acerca de mi</a>
+          <a href="#footer" class="w3-bar-item w3-button">Contacto</a>
+        </div>
+      </div>
     </div>
   </div>
+
+<!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
+<div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
+  <a href="#footer" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Contacto</a>
+  <a href="#" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Tienda</a>
+  <a href="index.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Inicio</a>
+  <a href="#" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()"></a>
 </div>
 
-<!-- Header -->
-<header class="w3-display-container w3-content w3-wide" style="max-width:1600px;min-width:500px" id="home">
-  <img href="#about" class="w3-image" src="abanicos/abanico_inicio.webp" alt="Hamburger Catering" width="1600" height="800">
-  <div class="w3-display-bottomleft w3-padding-large">
+  <!-- Automatic Slideshow Images -->
+  <div class="mySlides w3-display-container w3-center" id="home">
+    <img src="abanicos/abanico_inicio.webp" style="width:100%">
+    <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+      <p><b>Bienvenida(o) al mundo itarti</b></p>   
+    </div>
   </div>
-</header>
+  <div class="mySlides w3-display-container w3-center">
+    <img src="inicio2.jpg" style="width:100%">
+    <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+      <p><b>Bienvenida(o) al mundo itarti</b></p>   
+    </div>
+  </div>
+  <div class="mySlides w3-display-container w3-center">
+    <img src="inicio3.jpg" >
+    <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+      <p><b>Bienvenida(o) al mundo itarti</b></p>   
+    </div>
+  </div>
 
 <!-- Page content -->
 <div class="w3-content" style="max-width:1100px">
 
   <!-- ITARTIS somos -->
   <div class="w3-row w3-padding-small" id="about">
-    <div class="w3-col m6 w3-padding-large w3-hide-small">
+    <div class="w3-col m6 w3-padding-large ">
       <img src="inicio.jpg" class="w3-round w3-image" alt="Table Setting" width="600" height="750">
-      <div class="w3-col m6 w3-hide-small">
+      <div class="w3-col m6 ">
       </div>
     </div>
 
@@ -62,9 +89,9 @@ h1, h2, h3, h4, h5, h6 {
 
   <!-- acerca de mi -->
   <div class="w3-row w3-padding-small" id="about">
-    <div class="w3-col m6 w3-padding-large w3-hide-small">
+    <div class="w3-col m6 w3-padding-large ">
       <img src="Lucero.webp" class="w3-round w3-image" alt="Table Setting" width="650" height="800">
-      <div class="w3-col m6 w3-hide-small">
+      <div class="w3-col m6 ">
       </div>
     </div>
 
@@ -90,9 +117,9 @@ h1, h2, h3, h4, h5, h6 {
         <br><br>
         ¡Siempre! firmadas, numeradas y autentificadas.</p>
     </div>
-    <div class="w3-col m6 w3-padding-small w3-hide-small">
+    <div class="w3-col m6 w3-padding-small">
       <img src="caja_vinos/caja_vinos_inicio.webp" class="w3-round w3-image" alt="Table Setting" width="600" height="750">
-      <div class="w3-col m6 w3-hide-small">
+      <div class="w3-col m6 ">
         <a href="#menu" class="w3-button"><h1 class="w3-large">Cajas para Vino</h1></a>
       </div>
     </div>
@@ -101,9 +128,9 @@ h1, h2, h3, h4, h5, h6 {
 
   <!-- cajas decoradas -->
   <div class="w3-row w3-padding-small" id="about">
-    <div class="w3-col m6 w3-padding-small w3-hide-small">
+    <div class="w3-col m6 w3-padding-small ">
       <img src="cajas/caja_1.webp" class="w3-round w3-image" alt="Table Setting" width="400" height="500">
-      <div class="w3-col m6 w3-hide-small">
+      <div class="w3-col m6 ">
         <a href="#menu" class="w3-button"><h1 class="w3-large">Cajas decoradas</h1></a>
       </div>
     </div>
@@ -126,9 +153,9 @@ h1, h2, h3, h4, h5, h6 {
         <br> <br>
         Pregunta por nuestras piezas en existencia o pide un diseño para ti o para obsequiar a alguien especial.</p>
     </div>
-    <div class="w3-col m6 w3-padding-small w3-hide-small">
+    <div class="w3-col m6 w3-padding-small ">
       <img src="joyeros/joyero_1.webp" class="w3-round w3-image" alt="Table Setting" width="350" height="450">
-      <div class="w3-col m6 w3-hide-small">
+      <div class="w3-col m6 ">
         <a href="#menu" class="w3-button"><h1 class="w3-large">Joyeros</h1></a>
       </div>
     </div>
@@ -181,5 +208,41 @@ h1, h2, h3, h4, h5, h6 {
 
   <div class="w3-white w3-center w3-padding "><p class="info_clausula"><b> © 2021 ITARTI Artesanía Contemporánea. Todos los derechos reservados.</p>
 
+
+<script>
+  // Automatic Slideshow - change image every 4 seconds
+  var myIndex = 0;
+  carousel();
+  
+  function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 4000);    
+  }
+  
+  // Used to toggle the menu on small screens when clicking on the menu button
+  function myFunction() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+      x.className += " w3-show";
+    } else { 
+      x.className = x.className.replace(" w3-show", "");
+    }
+  }
+  
+  // When the user clicks anywhere outside of the modal, close it
+  var modal = document.getElementById('ticketModal');
+  window.onclick = function(event) {
+    if (event.target == modal) {
+      modal.style.display = "none";
+    }
+  }
+  </script>
 </body>
 </html>
